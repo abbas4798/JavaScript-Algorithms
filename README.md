@@ -453,6 +453,458 @@ Output: [10]
  console.log(myData);
 ----------------------------------------------.
 
+Code Examples :
+
+// Boolen Data type
+
+var abb = true;
+
+if(abb){
+    console.log("this is true statement")
+}
+else{
+    console.log("this is false statement")
+}
+
+// -------------------------
+  
+/* Adding . values */
+
+// let x = 4.5;
+// let y = 3.3;
+// let z = x+y;
+// console.log(z);
+
+// -------------------------
+
+//*** Access Multi-dimensional Arrays **//
+// let myArray = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9],
+//     [10,11,12],
+//         [
+//             [13,14,15],
+//             [18,19,20,
+//                 [21,22,
+//                     [23,24]
+//                 ]
+//         ],
+//          16,
+//          17
+//         ]
+//             ];
+// let myData = myArray[4][1][3][2][1];
+// console.log(myData)
+
+// ------------------------------------------
+
+
+const index = ourArray.findIndex((item) => item.some((item) => item === 'goat'))
+ourArray[index] = ourArray[index].filter((item) => item !== 'goat')
+
+
+console.log(ourArray);
+
+———————————————————————
+
+const a = [['a','b','c'],['d','e','f'], 2, 1, {a:"b"}];
+
+const index = a.findIndex((item) => {
+return item.length === undefined && typeof item === 'object'
+    console.log(item.length === undefined && typeof item === 'object' )
+} )
+
+a[index] = a[index].filter((item) => item !== "e")
+a[4] = {b : a[4].a}
+
+// console.log(a[4])
+
+// -----------
+Let = a[“a” , ”b” , “c”] , 1 , 2 {a: ‘b’};
+a[3] = ['a','b','c']
+console.log(a)
+
+——————————————————————-
+——————————————————————-
+
+11 January 2023
+
+/** Using of Shift function**/
+// It's remove the first element of array
+
+// let myArray = ["apple", "orange", "banana"]
+// myArray.shift();
+// console.log(myArray)
+
+OUTPUT: [ 'orange', 'banana' ]
+
+// ---------------------------------
+
+/* Using of Unshift method()***/
+It's add new element in our starting position of Array
+
+let myArray = ["apple", "orange", "banana"]
+myArray.unshift('graphs');
+console.log(myArray)
+
+OUTPUT: [ 'graphs', 'apple', 'orange', 'banana' ]
+
+Example:
+
+let myArray = ["apple", "orange", "banana"]
+myArray.unshift('graphs');
+myArray.push('last')
+console.log(myArray)
+
+OUTPUT: [ 'graphs', 'apple', 'orange', 'banana', 'last' 
+
+———————————————————
+
+Object:
+
+Object is similar to Map —both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key
+
+
+// ------------------------------------
+
+
+JS FUNCTION
+
+// Function ourReusableFunction(){
+//     console.log("this is normal function")
+// }
+// Functions are the most important weapon you have in your arsenal, but you need to understand very well that a function is a first-class object, they are treated like an object, also a function can be referred by variables, declared with literals and even passed as a function.
+
+// Four parts of a function (or syntax)
+
+// 1) The function keyword.
+// 2) An optional name ( this is also because it can be anonymous ).
+// 3) A list of parameters names enclosed in parentheses.
+// 4) The statement enclosed in braces.
+
+//Function declaration
+
+// One way to define a function is like the following code, keeping the four parts of a function, a function declaration is well known too as a function statement.
+
+// The return statement returns a value from the parameter. you can call the function by just mentioning its name, followed by the arguments in the parentheses.
+
+// Remember that if you don’t return nothing in the parameters part, the value will be “undefined”
+
+————————————————
+
+Parameter and Argument
+
+The words parameters and arguments are well interchangeably, this is because sometimes we used wrong when we talk with other developers, but there is a rule of gold for distinguishing them.
+
+Parameter
+This is used only to define a function, also they are called formal parameters and formal arguments, I will show you an example
+
+￼
+
+Argument
+This is used only to invoke a function, also they are called actual parameters and actual arguments, I will show you an example
+￼
+￼
+——————————————————————
+
+The use
+The key principles to use functions is modularity and reusability, because each function does its own work, but this can maintain your code rather well organized, and also takes care of your libraries and call your functions many times you want!
+
+
+The roles
+A function can play several roles
+
+* As a literal function We can call a function in a direct way, and it will work as a normal function. The names of a normal function start with lowercase letters.
+￼
+￼
+Calling the function as a literal
+
+* Method You can make a function in a property of an object, which turns in to a method. you can invoke this function via an object. The names of methods start with lowercase letters.
+￼
+￼
+Function as a method ( knowledge )
+￼
+￼
+Calling the function as a method
+* 		Constructor You can call a function via the new operator. which turns it into a constructor, a factory for objects. The names of methods start with uppercase letters.
+￼
+￼
+
+Calling the function as a constructor
+
+————————————————————————————————————————————.
+4
+Function expressions
+
+There is another way to define a function, which is the function expression, in this particular way you can produce a value, let see an example.
+￼
+￼
+Function expression
+
+This type assigned the result of a function expression to a variable, which we could be called it later with that variable.
+
+——————————————————————————————————————————.
+
+Anonymous functions
+From the previous example, you can see, that the name of the function is the name of the variable, this is because we don’t insert a name of the function statement, these are called the anonymous function (a function without a name). In other words.
+
+Functions stored in variables do not need function names. They are always invoked (called) using the variable name.
+
+———————————————————————————————————————————.
+The war
+There is a war between the functions declaration and function expression, the war is the argument for which is better.
+I have always been ask, which is better?, what function definition do I prefer?, do I combine both?
+I always answer they are basically the same dude! but function declarations have two advantages over function expressions.
+* 		They are hoisted and they have a name which for me is a lot better! thig about it! ;)
+
+—————————————————————————————————————————.
+
+
+Define a function
+If you get all the way through here, you already know there are three ways to create a function.
+* 		The function expression
+* 		The function declaration
+* 		The constructor Function()
+
+———————————————————————————————————————————.
+
+Scoping
+This is a very interesting thing, and actually I would like to make a whole chapter about this, but for now, you should know that a variable’s scope is the context in which the variable exists. This means from where to where you can access a variable and whether you have access to the variable in that context
+The scoping can be defined as global or local.
+
+Global
+All the variables that you declare, is by default defined in global scope, in the personal matter of each developer this is very annoying language design decision take in JavaScript. this is because as a global variable is visible from all the scopes and therefore can be modified in any scope
+The way you can create a global variable is
+* 		Declare the variable outside a function with a var statement
+* 		Omit the var statement while declaring a variable. this is kinda headache because if you omit or forgot to put the var statement its turn into a global variable by default
+* 
+Local
+Unlike most programming languages, JavaScript does not have a block-level scope like Perl, Python or PHP… (these means variables scoped surrounding in curly brackets). in order to get the local scope, we need to declare the variable in the function
+
+———————————————————————————————————————————.
+
+Hoisting
+I know guys, for the beginner’s dudes this word maybe a little bit scary, but no worries, the thing you need to understand is “hoisting is moving to the beginning of a scope”
+
+￼
+Completely hoisted function
+
+￼
+Completely hoisted variable XD
+
+￼
+The error from trying hoist a function expression
+
+
+
+—————————————————————————————————————————.
+
+
+Coding mini projects :
+
+/* Simple- normal function */
+
+function Myfun () {
+     console.log("hello world");
+ }
+ Myfun();
+ Myfun();
+ Myfun();
+
+OUTPUT: 
+hello world
+hello world
+hello world
+
+---------------------------------
+
+/* Simple function set parameters, then invoke fun and pass arguments */
+parameters are variables that act as place holders for the values
+
+function Myfun(a,b){
+     return a + b;
+ }
+ console.log(Myfun(1,5));
+
+OUTPUT: 6
+
+---------------------------------
+
+/* GLobal Scope and Function
+
+ Scope refers to the visibility of variables 
+ variables which are defined outside of a function block have global scope.
+ Global scope mean they can be seen everywhere in our javascript code.
+ So, normally if you do use a var keyword, since this is within a function , it will be scoped to that function. */
+ 
+ var myGlobal = 7;
+ 
+ function fun1(){
+   oopGlobal = 4; // this variable invoke by globally
+   var localVariable = 8; //
+   }
+ 
+   function fun2(){
+      var output = "";
+      if (typeof myGlobal != "undefined"){
+          output += "myGlobal " + myGlobal ;
+      }
+      if( typeof oopGlobal != "undefined"){
+          output += " oopGlobal " + oopGlobal;
+      }
+       if( typeof localVariable != "undefined"){
+          output += " localVariable " + localVariable;
+      }
+      console.log(output);
+  }
+  fun1();
+  fun2();
+
+OUPUT: myGlobal 7 oopGlobal 4
+ 
+----------------------------------------------
+ 
+/* Local Scope and Funtion
+Variables which are declared within function as well as the function paramteres have local scope.
+That mean they're only visible from within the function.
+
+function LocalScope (){
+ var myVar = 5;
+   console.log(myVar);
+}
+ LocalScope();
+ console.log(myVar)
+
+OUTPUT: 5 & error message
+
+------------------------------------------------
+
+/* Global vs Local Scope in Funciton
+
+ It is possible to have both local and global variables with in the same name.
+
+Example: 1
+ var outerWear = "T-Shirt ";
+ var outerWearr = "Coat ";
+ 
+ function myOutFit (){
+  return outerWear + outerWearr;  
+  };
+ 
+  console.log(myOutFit());
+
+OUTPUT: T-Shirt Coat 
+ 
+—————————————————————————
+Example: 2
+
+ var outerWear = "T-Shirt ";
+ 
+ function myOutFit (){
+
+   var outerWear = "Sweeter"	 // show this value now
+
+   return outerWear;   // we can return a value form function with this return statement.
+ };
+ 
+ console.log(myOutFit());
+ console.log(outerWear); 		// this show 'T-shirt'
+
+OUTPUT: Sweeter
+		 T-Shirt 
+
+ 
+—————————————————————————
+
+let Global = "This is outer variable"
+
+function fun1() {
+   var Global1 = "1st"
+    return Global1;
+}
+
+function fun2() {
+    var Global = "2st"
+    return Global;
+}
+
+function fun3() {
+    var Global = "3st"
+    return Global;
+}
+
+function fun4(Global1) {
+    var Global = "4st";
+    return Global1 + Global;
+}
+
+console.log(fun4('passing_data through argument '), fun3(), fun2(), fun1())
+
+OUPUT: passing_data through argument 4st 3st 2st 1st
+
+——————————————————————————.
+
+Return value from a function
+
+Example: 1
+
+function a (a){
+    return a - 12
+}
+console.log(a(14))
+
+OUTPUT: 2
+
+——————————————————————————.
+
+Example: 2
+
+var changed = 0;
+
+function change (num){
+    return (num + 2) / 2;
+}
+console.log(change(3))
+
+OUTPUT: 2.5
+
+——————————————————————————.
+
+Example: 3
+
+var changed = 0;
+
+function change (num){
+    return (num + 2) / 2;
+}
+changed += change(5);
+console.log(changed)
+
+OUTPUT: 3.5
+
+——————————————————————————.
+
+/* Assigning new value in array */
+let x = [1,2,3,4,5,6]
+x[1] = 9
+console.log(x);
+
+——————————————————————————.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
