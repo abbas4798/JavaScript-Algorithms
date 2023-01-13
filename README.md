@@ -1099,14 +1099,14 @@ Object literals ({ ...obj, key: 'value' })
 
 // Example: 1
 
-// function xyz (a,...b){
-//     return b.map(function(item) {
-//         return a + item;
-//     });
-// };
+function xyz (a,...b){
+   return b.map(function(item) {
+     return a + item;
+   });
+ };
 
-// let y = xyz(2,2,2,6);
-// console.log(y);
+let y = xyz(2,2,2,6);
+console.log(y);
 
 // OUTPUT: [ 4, 4, 8 ]
 
