@@ -891,10 +891,279 @@ x[1] = 9
 console.log(x);
 
 ——————————————————————————.
+Iterable is an object which can be looped over or iterated over with the help of a for loop. Objects like lists, tuples, sets, dictionaries, strings, etc. are called iterables. In short and simpler terms, iterable is anything that you can loop over.
+
+Array + List
+
+
+/* JSON.stringify() method */
+
+// In Computer Science a cue is an abstract data structure where items are kept in order.
+// New items can be added to the back of the cue and old items are taken off from the front of the cue.
+// We are going to simulate that right now, 
+
+Example: 1
+
+const obj = {name: "dev",
+             today: new Date(),
+             city : "Lhr",
+             location:4747};
+console.log(typeof obj)
+const myJSON = JSON.stringify(obj);
+console.log(typeof myJSON)
+
+OUTPUT: object
+        string
+
+
+// ---------------------------
+
+Example: 2
+
+let obj = {name: "John", age: 30};
+console.log(typeof obj);
+let str = JSON.stringify(obj, null, 2);
+console.log(typeof str);
+
+OUTPUT: object
+                 string
+// ---------------------------
+
+Example: 3
+
+let v = [1,2,3,4,5];
+let x = JSON.stringify(v);
+console.log(typeof x)
+
+------------------------------
+
+JS 7 types of Data types
+
+let a = [1,2,3];
+let b = "akjjk";
+let c = {a:1, b:2, c:3};
+let d= 47;
+let e = true;
+let f = null;
+let g;
+
+console.log(typeof(a))
+console.log(typeof(b))
+console.log(typeof(c))
+console.log(typeof(d))
+console.log(typeof(e))
+console.log(typeof(f))
+console.log(typeof(g))
+
+OUTPUT:
+object
+string
+object
+number
+boolean
+object
+undefined
 
 
 
+——————————————————————————.
+*************************************************
 
+
+13 January 2023
+
+Pseudocode
+
+
+Description
+In computer science, pseudocode is a plain language description of the steps in an algorithm or another system. Pseudocode often uses structural conventions of a normal programming language, but is intended for human reading rather than machine reading.
+
+Format
+
+Pseudocode is an artificial and informal language that helps programmers develop algorithms. Pseudocode is a "text-based" detail (algorithmic) design tool. The rules of Pseudocode are reasonably straightforward. All statements showing "dependency" are to be indented.
+
+————————————————.
+
+Spread syntax (...)
+
+Spread syntax can be used when all elements from an object or array need to be included in a new array or object, or should be applied one-by-one in a function call's arguments list. There are three distinct places that accept the spread syntax:
+
+Function arguments list (myFunction(a, ...iterableObj, b))
+Array literals ([1, ...iterableObj, '4', 'five', 6])
+Object literals ({ ...obj, key: 'value' })
+
+
+// * Spread operator/ Rest operator
+// add the elements of an existing array into new array
+// Pass elements of an array as arguments to a function
+// copy arrays
+// concatenate array
+
+
+// Example: 1
+
+// const numbers = [1, 2, 3];
+// function sum(x, y, z) {
+//   return x + y + z;
+// }
+
+// console.log(sum(...numbers));
+
+// OUTPUT: 6
+
+// ------------------------------------
+
+// Example: 2
+
+//Aizaz example:
+
+// const obj = { a: 'aizaz', b: 'waheed' }
+// let b = {
+// a: obj.a + " " + obj.b,
+//     ...obj
+// }
+
+// console.log(obj)
+
+// OUTPUT: { a: 'aizaz', b: 'waheed' }
+
+// -------------------------------------
+
+// Example: 3
+
+//add the elements of an existing array into a new array
+// let x = ["front-end", "backend"];
+// let y = ["AWS", "Azure", ...x, "Google cloud"]
+// console.log(y)
+
+// OUTPUT: [ 'AWS', 'Azure', 'front-end', 'backend', 'Google cloud' ]
+
+// ----------------------------------------
+
+// Example: 4
+
+//pass elements of an array as arguments to a function
+// let y = [2,2,2];
+// x(...y);
+
+// function x (a,b,c) {
+// console.log(a+b+c)
+// }
+
+// OUTPUT: 6
+
+// ------------------------------------------
+
+// Example: 4
+
+////copy array
+// let y = [2,2,2,3]; // ignore last fourth element cause                     funtion have just 3 argument items
+// x(...y);
+
+// function x (a,b,c) {
+// console.log(a+b+c)
+// }
+
+// OUTPUT: 6
+
+// -------------------------------------------
+
+// Example: 5
+
+//copy array / passing new element
+// let x = [1,2,3,4];
+// let y = [...x];
+// y.push(5)
+// console.log(x);
+// console.log(y);
+
+// OUTPUT: [ 1, 2, 3, 4 ]
+// [ 1, 2, 3, 4, 5 ]
+// ----------------------------------------------
+
+// Example: 6
+
+//concatenate array
+// let x = ['a','b','c'];
+// let y = ['d','e','f'];
+// // console.log(x.concat(y))x;
+// x = [...x, ...y]
+// console.log(x)
+
+// OUTPUT: [ 'a', 'b', 'c', 'd', 'e', 'f' ]
+// --------------------------------------------------
+
+/* REST Opearator */
+
+// REST: condense multiple elements into a array.
+// the rest operator is looks exactly like spread operator. it's just 3 dots but it's bascially the opposite of the spread operator.
+// the spread operator spreads or expands an array to it's elements but the rest operator collects multiple elements and condenses into a single array element.
+
+// Example: 1
+
+// function xyz (a,...b){
+//     return b.map(function(item) {
+//         return a + item;
+//     });
+// };
+
+// let y = xyz(2,2,2,6);
+// console.log(y);
+
+// OUTPUT: [ 4, 4, 8 ]
+
+// --------------------------------
+
+
+const list = [
+    {
+    firstName: "Aizaz",
+    lastName: "Waheed",
+    email:"aizazwaheed@gmail.com"
+      },
+    
+    {
+    firstName: "Ali",
+    lastName: "Ahmad",
+    email:"aliahmad@gmail.com"
+      },
+
+    {
+    firstName: "Muhammad",
+    lastName: "Hassan",
+    email:"Muhammadhassan@gmail.com"
+        },
+
+    { 
+    firstName: "Faraz",
+    lastName: "Ahmad",
+    email:"farazahmad@gmail.com"
+      },
+
+    {
+    firstName: "Usman",
+    lastName: "Ashraf",
+    email:"usmanashraf@gmail.com"
+      }
+    ]
+    
+    const data = list.map((item) => {
+        return {...item, firstName: item.lastName, lastName: item.firstName}
+    })
+    console.log(data);
+    
+//   ##############
+    
+     let x = list.map(getFullName);
+    
+    function getFullName(item){
+        return {
+            ...item
+        }
+    }
+    console.log(x)
+    
+    // -----------------------------------------
 
 
 
