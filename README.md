@@ -1163,6 +1163,8 @@ const list = [
     
     // -----------------------------------------
 
+Anonymous Function
+It is a function that does not have any name associated with it. 
 
 
 
