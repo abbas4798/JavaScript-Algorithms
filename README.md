@@ -353,11 +353,11 @@ undefined, null, boolean, string, symbol, number and object
 /** Finding index of the specific position in Strings */
 
 
-// let x = 'da ya sahi dy kha mara sahii da sahi'
-// let y = x.search('sahi')
-// let z = x.indexOf('sahi',15)
-// let i = x.lastIndexOf('sahi')
-// console.log(y,z,i)
+let x = 'da ya sahi dy kha mara sahii da sahi'
+let y = x.search('sahi')
+let z = x.indexOf('sahi',15)
+let i = x.lastIndexOf('sahi')
+console.log(y,z,i)
    Output: 6 23 32
 -----------------------------------------------------
 ** find the letter by index
@@ -380,23 +380,22 @@ console.log(x);
 
 /** Finding index of the specific position in Strings */
 
-// let x = 'da ya sahi dy kha mara sahii da sahi'
-
-// let y = x.search('sahi')
-// let z = x.indexOf('sahi',15)
-// let i = x.lastIndexOf('sahi')
-// console.log(y,z,i)
+let x = 'da ya sahi dy kha mara sahii da sahi'
+let y = x.search('sahi')
+let z = x.indexOf('sahi',15)
+let i = x.lastIndexOf('sahi')
+console.log(y,z,i)
 
 // ------------------------------------------------------
 
 // Blank words
 // function worldBanks (myNoun, myAdjective, myVerb, myAdverb){
-//     var result = "";
-//     result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb;
-//     return result;
-// }
-// console.log(worldBanks("Dog", "Big", "run", "quickly"))
-// console.log(worldBanks("bike","slow","flew","store"))
+  var result = "";
+  result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb;
+  return result;
+  }
+  console.log(worldBanks("Dog", "Big", "run", "quickly"))
+  console.log(worldBanks("bike","slow","flew","store"))
 // -------------------------------------------------------
 
 /**************** Array **********
@@ -410,23 +409,22 @@ console.log(x);
 ***** Nested Array ****/
 // Multidimentional Array
 
-// let ourArray = [['React', 14],["Angular", 71]];
-// console.log(ourArray)
+let ourArray = [['React', 14],["Angular", 71]];
+console.log(ourArray)
 
 // **** Access Array Data with Indexes ***/
 
-// let ourArray = [10,20,30];
-// let ourData = ourArray[0];
-// console.log(ourData)
+let ourArray = [10,20,30];
+let ourData = ourArray[0];
+console.log(ourData)
 Output: [10]
 
 // ------------------------------------
 
-// let ourArray = [10,20,30];
-// ourArray[1] = 45;
-// console.log(ourArray);
-
-// Output: [ 10, 45, 30 ]
+let ourArray = [10,20,30];
+ourArray[1] = 45;
+console.log(ourArray);
+Output: [ 10, 45, 30 ]
 
 //---------------------------------------.
 
@@ -470,32 +468,32 @@ else{
   
 /* Adding . values */
 
-// let x = 4.5;
-// let y = 3.3;
-// let z = x+y;
-// console.log(z);
+  let x = 4.5;
+  let y = 3.3;
+  let z = x+y;
+  console.log(z);
 
 // -------------------------
 
 //*** Access Multi-dimensional Arrays **//
-// let myArray = [
-//     [1,2,3],
-//     [4,5,6],
-//     [7,8,9],
-//     [10,11,12],
-//         [
-//             [13,14,15],
-//             [18,19,20,
-//                 [21,22,
-//                     [23,24]
-//                 ]
-//         ],
-//          16,
-//          17
-//         ]
-//             ];
-// let myData = myArray[4][1][3][2][1];
-// console.log(myData)
+ let myArray = [
+   [1,2,3],
+   [4,5,6],
+   [7,8,9],
+   [10,11,12],
+       [
+            [13,14,15],
+            [18,19,20,
+	    [21,22,
+            [23,24]
+        ]
+         ],
+        16,
+        17
+       ]
+           ];
+ let myData = myArray[4][1][3][2][1];
+console.log(myData)
 
 // ------------------------------------------
 
