@@ -1166,6 +1166,48 @@ const list = [
 Anonymous Function
 It is a function that does not have any name associated with it. 
 
+------------------------------------------------------------
+// var y = 0;
+// if (function f() {}) {
+//   y += typeof f;
+// }
+
+// console.log(y);
+// -------------------------------
+
+// var y = "1 ";
+
+// function f() {}; //declare function outside if brackets
+
+// if (f !== y) { //f exists so we enter the if block
+//   y += typeof f; //here typeof f is function
+// }
+
+// console.log(y); // 1function
+// --------------------------------
+
+// Examples of closure
+
+// function createFunction(msg) {
+//     return function(name) {
+//         return msg ;
+//     }
+// }
+// -------------------------------------
+// let myFunc = createFunction("Hey ");
+// console.log(myFunc("Dude")); // Dude
+
+// Write an example of closure
+// function createFunction(msg) {
+//     return function(name) {
+//         return msg + name;
+//     }
+// }
+
+// let myFunc = createFunction("Hey ");
+// console.log(myFunc("Dude")); // Hey Dude
+// ------------------------------------------------------
+
 
 
 
