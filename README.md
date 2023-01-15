@@ -327,8 +327,7 @@ Programmers will often be immediately familiar with the primitive data types use
 which do not involve more sophisticated data sets for effective representation.
 
 A regular expression is a sequence of characters that forms a search pattern.
-
-----------------------------------------------------------
+——————————————————————
 Data Types and Varaibes
 JS provides 7 different data types.
 undefined, null, boolean, string, symbol, number and object
@@ -349,8 +348,7 @@ undefined, null, boolean, string, symbol, number and object
 // var mysttr = "Firstline \t this is the beginning of new line "
 
 // console.log(myStr, myStrr, mystr, mysstr, mysttr, mysttr, mysttr)
-
-/*------------------------------------------------------------ */
+——————————————————————
 
 /** Finding index of the specific position in Strings */
 
@@ -370,16 +368,14 @@ var firstName = "Ada"
 
 firstLetterOfFirstName = firstName [1];
  console.log(firstLetterOfFirstName);
-
-----------------------------------------------------------------
+——————————————————————
 
 /* Changing in String */
 
 let x = "Jello World";
 x = 'H' + x.slice(1,11)
 console.log(x);
-
------------------------------------------------------------------
+——————————————————————
 
 /** Finding index of the specific position in Strings */
 
@@ -389,7 +385,7 @@ let z = x.indexOf('sahi',15)
 let i = x.lastIndexOf('sahi')
 console.log(y,z,i)
 
-// ------------------------------------------------------
+——————————————————————
 
 // Blank words
 // function worldBanks (myNoun, myAdjective, myVerb, myAdverb){
@@ -399,7 +395,7 @@ console.log(y,z,i)
   }
   console.log(worldBanks("Dog", "Big", "run", "quickly"))
   console.log(worldBanks("bike","slow","flew","store"))
-// ------------------------------------------------------------------------
+——————————————————————
 
 /**************** Array **********
 
@@ -407,7 +403,7 @@ console.log(y,z,i)
 // every element in array is seprate by ','
 // let ourArray = ['abbey', 47]
 // console.log(ourArray)
------------------------------------------------------------------.
+——————————————————————
 
 ***** Nested Array ****/
 // Multidimentional Array
@@ -453,7 +449,7 @@ Output: [ 10, 45, 30 ]
  
  console.log(myData
  
-----------------------------------------------.
+——————————————————————
 
 Code Examples :
 
@@ -467,9 +463,7 @@ if(abb){
 else{
     console.log("this is false statement")
 }
-
-// --------------------------------------------------
-  
+——————————————————————
 /* Adding . values */
 
   let x = 4.5;
@@ -908,8 +902,7 @@ console.log(typeof myJSON)
 OUTPUT: object
         string
 
-
-// ---------------------------
+——————————————————————
 
 Example: 2
 
@@ -921,15 +914,13 @@ console.log(typeof str);
 OUTPUT: object
                  string
 		 
-// ---------------------------------
+——————————————————————
 
 Example: 3
 
 let v = [1,2,3,4,5];
 let x = JSON.stringify(v);
-console.log(typeof x)
-
-------------------------------
+——————————————————————
 
 JS 7 types of Data types
 
@@ -1002,7 +993,7 @@ Object literals ({ ...obj, key: 'value' })
 
 // OUTPUT: 6
 
-// ------------------------------------
+——————————————————————
 
 // Example: 2
 
@@ -1017,8 +1008,7 @@ Object literals ({ ...obj, key: 'value' })
 // console.log(obj)
 
 // OUTPUT: { a: 'aizaz', b: 'waheed' }
-
-// -------------------------------------
+——————————————————————
 
 // Example: 3
 
@@ -1029,7 +1019,7 @@ Object literals ({ ...obj, key: 'value' })
 
 // OUTPUT: [ 'AWS', 'Azure', 'front-end', 'backend', 'Google cloud' ]
 
-// ----------------------------------------
+——————————————————————
 
 // Example: 4
 
@@ -1043,7 +1033,7 @@ Object literals ({ ...obj, key: 'value' })
 
 // OUTPUT: 6
 
-// ------------------------------------------
+——————————————————————
 
 // Example: 4
 
@@ -1057,7 +1047,7 @@ Object literals ({ ...obj, key: 'value' })
 
 // OUTPUT: 6
 
-// -------------------------------------------
+——————————————————————
 
 // Example: 5
 
@@ -1070,8 +1060,7 @@ Object literals ({ ...obj, key: 'value' })
 
 // OUTPUT: [ 1, 2, 3, 4 ]
 // [ 1, 2, 3, 4, 5 ]
-
-// ----------------------------------------------
+——————————————————————
 
 // Example: 6
 
@@ -1084,7 +1073,7 @@ Object literals ({ ...obj, key: 'value' })
 
 // OUTPUT: [ 'a', 'b', 'c', 'd', 'e', 'f' ]
 
-// --------------------------------------------------
+——————————————————————
 
 /* REST Opearator */
 
@@ -1105,7 +1094,7 @@ console.log(y);
 
 // OUTPUT: [ 4, 4, 8 ]
 
-// --------------------------------
+——————————————————————
 
 
 const list = [
@@ -1156,12 +1145,11 @@ const list = [
     }
     console.log(x)
     
-    // -----------------------------------------
+——————————————————————
 
 Anonymous Function
 It is a function that does not have any name associated with it. 
-
-------------------------------------------------------------
+——————————————————————
 // var y = 0;
 // if (function f() {}) {
 //   y += typeof f;
@@ -1169,7 +1157,7 @@ It is a function that does not have any name associated with it.
 
 // console.log(y);
 
-// -----------------------------------------------
+——————————————————————
 
 // var y = "1 ";
 
@@ -1180,8 +1168,7 @@ It is a function that does not have any name associated with it.
 // }
 
 // console.log(y); // 1function
-
-// ------------------------------------------------------
+——————————————————————
 
 // Examples of closure
 
@@ -1190,7 +1177,7 @@ It is a function that does not have any name associated with it.
 //         return msg ;
 //     }
 // }
-// -----------------------------------------------------------
+——————————————————————
 
 // let myFunc = createFunction("Hey ");
 // console.log(myFunc("Dude")); // Dude
@@ -1204,9 +1191,7 @@ It is a function that does not have any name associated with it.
 
 // let myFunc = createFunction("Hey ");
 // console.log(myFunc("Dude")); // Hey Dude
-
-// -----------------------------------------------------------------------------------------------------------
-
+——————————————————————
 // // like multiply(2)(5)(10) and returns 100
 // // This is similar to the example above, the difference being that we are retuning an additional function and invoking all of them straight away(no using variables for holding references)
 
@@ -1228,7 +1213,7 @@ It is a function that does not have any name associated with it.
 // // We are invoking the returned functions one after the other.
 
 
-// -----------------------------------------------------------------------------------------------------------------
+——————————————————————
 
 
 
