@@ -1228,6 +1228,10 @@ console.log(myObject.name)
 myObject["name"] = "Mobile";
 console.log(myObject.name)
 
+let Selection = "name";
+myObject[Selection] = "Cloud";
+console.log(myObject.name)
+
 ------------------------------------
 
 
