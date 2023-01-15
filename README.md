@@ -1215,19 +1215,19 @@ It is a function that does not have any name associated with it.
 
 ——————————————————————
 
+let myObject = {
+    name: "Dev",
+    Address: "Cantt",
+    Sex: "male"
+};
+console.log(myObject.name)
 
+myObject.name = "Web";
+console.log(myObject.name)
 
+myObject["name"] = "Mobile";
+console.log(myObject.name)
 
-
-
-
-
-
-
-
-
-
-
-
+------------------------------------
 
 
