@@ -522,7 +522,7 @@ a[4] = {b : a[4].a}
 
 // console.log(a[4])
 
-// --------------------------------------------------------------
+——————————————————————-
 
 Let = a[“a” , ”b” , “c”] , 1 , 2 {a: ‘b’};
 a[3] = ['a','b','c']
@@ -542,7 +542,7 @@ console.log(a)
 
 OUTPUT: [ 'orange', 'banana' ]
 
-// --------------------------------------------------------------
+——————————————————————-
 
 /* Using of Unshift method()***/
 It's add new element in our starting position of Array
@@ -561,15 +561,13 @@ myArray.push('last')
 console.log(myArray)
 
 OUTPUT: [ 'graphs', 'apple', 'orange', 'banana', 'last' 
-
-———————————————————--------------------------------------
+——————————————————————-
 
 Object:
 
 Object is similar to Map —both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key
 
-
-// ---------------------------------------------------------
+——————————————————————-
 
 
 JS FUNCTION
@@ -593,8 +591,7 @@ JS FUNCTION
 // The return statement returns a value from the parameter. you can call the function by just mentioning its name, followed by the arguments in the parentheses.
 
 // Remember that if you don’t return nothing in the parameters part, the value will be “undefined”
-
-————————————————---------------------------------------------.
+——————————————————————-
 
 Parameter and Argument
 
@@ -605,7 +602,7 @@ This is used only to define a function, also they are called formal parameters
 
 Argument
 This is used only to invoke a function, also they are called actual parameters and actual arguments, I will show you an example
-——————————————————————---------------------------------------------------.
+——————————————————————-
 
 The use
 The key principles to use functions is modularity and reusability, because each function does its own work, but this can maintain your code rather well organized, and also takes care of your libraries and call your functions many times you want!
