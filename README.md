@@ -1206,7 +1206,30 @@ It is a function that does not have any name associated with it.
 
 // let myFunc = createFunction("Hey ");
 // console.log(myFunc("Dude")); // Hey Dude
-// ------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+// // like multiply(2)(5)(10) and returns 100
+// // This is similar to the example above, the difference being that we are retuning an additional function and invoking all of them straight away(no using variables for holding references)
+
+
+// function multiply(x){
+//     return function (y){
+//         return function (z){
+//             return x * y * z;
+//         };
+//     }
+// }
+// const  x = multiply(2)(5)(10);
+// console.log(x) // 100
+
+// // By invoking multiply like
+
+// // javascript multiply(2)(5)(10)
+
+// // We are invoking the returned functions one after the other.
+
+
+// -----------------------------------------------------------------------------------------------------------------
 
 
 
