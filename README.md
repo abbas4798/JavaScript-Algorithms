@@ -134,7 +134,8 @@ true && true = true
 true && false = false
 false && true = false
 false && false = false
-====================
+
+========================================
 1 * 1 = 1 true
 1 * 0 = 0 false
 */
@@ -144,7 +145,9 @@ true || true = true
 true || false = true 
 false || true = true
 false || false = false
-=================
+
+=======================================
+
 1 + 1 = 2 true
 1 + 0 = 1 true
 0 + 1 = 1 true
@@ -168,7 +171,7 @@ var z = 50;
 // false
 */
 
-======================
+===========================================
 
 JavaScript Data Types:
 
@@ -239,7 +242,7 @@ let z = x.slice(6)
 
 'sahi dy kha mara sahii da'
 
----------------------------------
+------------------------------------------------------------
 Example 2:
 
 Negative values ouput
@@ -255,7 +258,7 @@ substring() is similar to slice().
 
 The difference is that substring() cannot accept negative indexes.
 
----------------------------------
+----------------------------------------------------
 
 *The substring() Method
 substring() is similar to slice().
@@ -269,7 +272,7 @@ var res = str.substring(7, 13);
 The result of res will be:
 Banana
 
-----------------------------------
+--------------------------------------------------------
 
 Replacing String Content
 *The replace() method replaces a specified value with another value in a string:
@@ -310,8 +313,7 @@ let z = x.replaceAll('soon', 'early')
 console.log(z)
 Get will early and he'll coming early
 
-***************************************************
-**************************************************
+*************************************************** ***************
 
 Coding practice
 
@@ -359,7 +361,7 @@ let z = x.indexOf('sahi',15)
 let i = x.lastIndexOf('sahi')
 console.log(y,z,i)
    Output: 6 23 32
------------------------------------------------------
+----------------------------------------------------------------
 ** find the letter by index
 
 
@@ -369,14 +371,15 @@ var firstName = "Ada"
 firstLetterOfFirstName = firstName [1];
  console.log(firstLetterOfFirstName);
 
--------------------------------------------------
+----------------------------------------------------------------
 
 /* Changing in String */
 
 let x = "Jello World";
 x = 'H' + x.slice(1,11)
 console.log(x);
-----------------------------------------------------
+
+-----------------------------------------------------------------
 
 /** Finding index of the specific position in Strings */
 
@@ -396,7 +399,7 @@ console.log(y,z,i)
   }
   console.log(worldBanks("Dog", "Big", "run", "quickly"))
   console.log(worldBanks("bike","slow","flew","store"))
-// -------------------------------------------------------
+// ------------------------------------------------------------------------
 
 /**************** Array **********
 
@@ -404,7 +407,7 @@ console.log(y,z,i)
 // every element in array is seprate by ','
 // let ourArray = ['abbey', 47]
 // console.log(ourArray)
------------------------------------------.
+-----------------------------------------------------------------.
 
 ***** Nested Array ****/
 // Multidimentional Array
@@ -419,14 +422,14 @@ let ourData = ourArray[0];
 console.log(ourData)
 Output: [10]
 
-// ------------------------------------
+// ------------------------------------------------------
 
 let ourArray = [10,20,30];
 ourArray[1] = 45;
 console.log(ourArray);
 Output: [ 10, 45, 30 ]
 
-//---------------------------------------.
+//-------------------------------------------------------------------------------.
 
 
  /** Access Multi-Dimensional Arrays with Indexes ***/
@@ -448,7 +451,8 @@ Output: [ 10, 45, 30 ]
  var myData = myArray [3][1][2][1];
  
  
- console.log(myData);
+ console.log(myData
+ 
 ----------------------------------------------.
 
 Code Examples :
@@ -464,7 +468,7 @@ else{
     console.log("this is false statement")
 }
 
-// -------------------------
+// --------------------------------------------------
   
 /* Adding . values */
 
@@ -473,7 +477,7 @@ else{
   let z = x+y;
   console.log(z);
 
-// -------------------------
+// --------------------------------------------------
 
 //*** Access Multi-dimensional Arrays **//
  let myArray = [
@@ -504,7 +508,7 @@ ourArray[index] = ourArray[index].filter((item) => item !== 'goat')
 
 console.log(ourArray);
 
-———————————————————————
+———————————————————————---------------------------------------
 
 const a = [['a','b','c'],['d','e','f'], 2, 1, {a:"b"}];
 
@@ -518,12 +522,13 @@ a[4] = {b : a[4].a}
 
 // console.log(a[4])
 
-// -----------
+// --------------------------------------------------------------
+
 Let = a[“a” , ”b” , “c”] , 1 , 2 {a: ‘b’};
 a[3] = ['a','b','c']
 console.log(a)
 
-——————————————————————-
+——————————————————————-----------------------------------
 ——————————————————————-
 
 11 January 2023
@@ -537,7 +542,7 @@ console.log(a)
 
 OUTPUT: [ 'orange', 'banana' ]
 
-// ---------------------------------
+// --------------------------------------------------------------
 
 /* Using of Unshift method()***/
 It's add new element in our starting position of Array
@@ -557,14 +562,14 @@ console.log(myArray)
 
 OUTPUT: [ 'graphs', 'apple', 'orange', 'banana', 'last' 
 
-———————————————————
+———————————————————--------------------------------------
 
 Object:
 
 Object is similar to Map —both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key
 
 
-// ------------------------------------
+// ---------------------------------------------------------
 
 
 JS FUNCTION
@@ -589,7 +594,7 @@ JS FUNCTION
 
 // Remember that if you don’t return nothing in the parameters part, the value will be “undefined”
 
-————————————————
+————————————————---------------------------------------------.
 
 Parameter and Argument
 
@@ -598,13 +603,9 @@ The words parameters and arguments are well interchangeably, this is because som
 Parameter
 This is used only to define a function, also they are called formal parameters and formal arguments, I will show you an example
 
-￼
-
 Argument
 This is used only to invoke a function, also they are called actual parameters and actual arguments, I will show you an example
-￼
-￼
-——————————————————————
+——————————————————————---------------------------------------------------.
 
 The use
 The key principles to use functions is modularity and reusability, because each function does its own work, but this can maintain your code rather well organized, and also takes care of your libraries and call your functions many times you want!
@@ -613,23 +614,20 @@ The key principles to use functions is modularity and reusability, because ea
 The roles
 A function can play several roles
 
-* As a literal function We can call a function in a direct way, and it will work as a normal function. The names of a normal function start with lowercase letters.
-￼
-￼
-Calling the function as a literal
+* As a literal function
+*  We can call a function in a direct way, and it will work as a normal function. 
+*  The names of a normal function start with lowercase letters.
+*  ￼Calling the function as a literal
 
-* Method You can make a function in a property of an object, which turns in to a method. you can invoke this function via an object. The names of methods start with lowercase letters.
-￼
-￼
-Function as a method ( knowledge )
-￼
-￼
-Calling the function as a method
-* 		Constructor You can call a function via the new operator. which turns it into a constructor, a factory for objects. The names of methods start with uppercase letters.
-￼
-￼
+* Method
+*  You can make a function in a property of an object, which turns in to a method. you can invoke this function via an object. The names of methods start with lowercase letters.
+*  Function as a method ( knowledge )
+*  Calling the function as a method
 
-Calling the function as a constructor
+* Constructor
+*  You can call a function via the new operator. which turns it into a constructor, a factory for objects. 
+*  The names of methods start with uppercase letters.
+*  Calling the function as a constructor
 
 ————————————————————————————————————————————.
 4
@@ -925,7 +923,8 @@ console.log(typeof str);
 
 OUTPUT: object
                  string
-// ---------------------------
+		 
+// ---------------------------------
 
 Example: 3
 
@@ -962,9 +961,6 @@ boolean
 object
 undefined
 
-
-
-——————————————————————————.
 *************************************************
 
 
@@ -1077,6 +1073,7 @@ Object literals ({ ...obj, key: 'value' })
 
 // OUTPUT: [ 1, 2, 3, 4 ]
 // [ 1, 2, 3, 4, 5 ]
+
 // ----------------------------------------------
 
 // Example: 6
@@ -1089,6 +1086,7 @@ Object literals ({ ...obj, key: 'value' })
 // console.log(x)
 
 // OUTPUT: [ 'a', 'b', 'c', 'd', 'e', 'f' ]
+
 // --------------------------------------------------
 
 /* REST Opearator */
@@ -1173,7 +1171,8 @@ It is a function that does not have any name associated with it.
 // }
 
 // console.log(y);
-// -------------------------------
+
+// -----------------------------------------------
 
 // var y = "1 ";
 
@@ -1184,7 +1183,8 @@ It is a function that does not have any name associated with it.
 // }
 
 // console.log(y); // 1function
-// --------------------------------
+
+// ------------------------------------------------------
 
 // Examples of closure
 
@@ -1193,7 +1193,8 @@ It is a function that does not have any name associated with it.
 //         return msg ;
 //     }
 // }
-// -------------------------------------
+// -----------------------------------------------------------
+
 // let myFunc = createFunction("Hey ");
 // console.log(myFunc("Dude")); // Dude
 
@@ -1206,6 +1207,7 @@ It is a function that does not have any name associated with it.
 
 // let myFunc = createFunction("Hey ");
 // console.log(myFunc("Dude")); // Hey Dude
+
 // -----------------------------------------------------------------------------------------------------------
 
 // // like multiply(2)(5)(10) and returns 100
